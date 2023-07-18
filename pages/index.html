@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div id="rain-container" class="rain-container">
+
+            <div class="drop">
+                <div class="stem"></div>
+                <div class="splash"></div>
+            </div>
+        </div>
+        <div class="shop">
+            <h1>Pizza order</h1>
+            <form id="form">
+                <input class="header-btn" type="text" name="user_name" placeholder="Enter your name" required>
+                <input class="header-btn" type="tel" name="user_phone" placeholder="Enter your phone number..."
+                    required>
+                <input class="header-btn" type="text" name="user_email" placeholder="Enter your address..." required>
+                <section class="none">
+                    <p class="on-pizza">Dought thickness:</p>
+                    <select id="shop-select" name="meatA" class="shop-select">
+                        <option data-price="0" selected disabled class="form-select">none</option>
+                        <option data-price="10" value="Thin" name="meat" class="form-select">Thin</option>
+                        <option data-price="12" value="Medium" name="meat" class="form-select">Medium</option>
+                        <option data-price="15" value="Thick" name="meat" class="form-select">Thick</option>
+                    </select>
+                </section>
+                <div class="shop-nav">
+                    <div class="shop-nav-p">
+                        <p class="on-pizza">Size to Pizza:</p>
+                    </div>
+                    <div class="size-wrapper">
+                        <input data-price="10" data-size="25sm" value="25" type="radio" name="size" id="small-size"
+                            class="size-wrapper__input">
+                        <label for="small-size" class="size-wrapper__label">25sm</label>
+
+                        <input data-price="12" data-size="30sm" value="30" type="radio" name="size" id="normal-size"
+                            class="size-wrapper__input">
+                        <label for="normal-size" class="size-wrapper__label">30sm</label>
+
+                        <input data-price="15" data-size="35sm" value="35" type="radio" name="size" id="big-size"
+                            class="size-wrapper__input">
+                        <label for="big-size" class="size-wrapper__label">35sm</label>
+                    </div>
+                </div>
+
+                <p class="on-pizza"> on Pizza:</p>
+                <div class="checkbox">
+                    <section>
+                        <div class="hold">
+                            <input data-price="5" class="inputlar" type="checkbox" value="Tomato" name="Tomato">
+                            <label for="tomatoes" class="how-label">Tomato</label>
+                        </div>
+
+                        <div class="hold">
+                            <input data-price="5" class="inputlar" type="checkbox" value="Pickled cucumber"
+                                data-add="cucumber" id="pickled" name="Tomato">
+                            <label for="pickled" class="how-label">Pickled cucumber</label>
+                        </div>
+                        <div class="hold">
+                            <input data-price="5" class="inputlar" type="checkbox" value="Turkey meat" data-add="Turkey"
+                                id="meat" name="Tomato">
+                            <label for="meat" class="how-label">Turkey meat</label>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="hold">
+                            <input data-price="5" class="inputlar" type="checkbox" value="Mushroom" data-add="Mushroom"
+                                id="mushroom" name="Tomato">
+                            <label for="mushroom" class="how-label">Mushroom</label>
+                        </div>
+
+                        <div class="hold">
+                            <input data-price="5" class="inputlar" type="checkbox" value="Olive" data-add="Zaytun"
+                                id="olive" name="Tomato">
+                            <label for="olive" class="how-label">Olive</label>
+                        </div>
+
+                        <div class="hold">
+                            <input data-price="5" class="inputlar" type="checkbox" value="Horse meat" data-add="horse"
+                                id="Horse" name="Tomato">
+                            <label for="horse" class="how-label">Horse meat</label>
+                        </div>
+                    </section>
+                </div>
+                <p class="on-pizza">Add:</p>
+                <div class="checkbox">
+                    <div class="hold">
+                        <input data-price="3" class="achchiq_hayot" value="peper" type="checkbox" id="pepper"
+                            name="howw">
+                        <label for="bitter" class="how-label">pepper</label>
+                    </div>
+                    <div class="hold">
+                        <input data-price="3" class="achchiq_hayot" value="Sausages" type="checkbox" id="sausages"
+                            name="howw">
+                        <label for="sausages" class="how-label">Sausages</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Save</button>
+            </form>
+            <ul id="list"></ul>
+        </div>
+    </main>
+    <script src="../assets/js/index.js"></script>
+</body>
+
+</html>
